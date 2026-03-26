@@ -123,3 +123,27 @@ def test_excessao_muitas_selecoes():
     
     with pytest.raises(Exception, match="Cannot select more than 1 choices"):
         question.correct_selected_choices([1, 2])
+
+
+### 2 testes com fixtures ###
+
+@pytest.fixture
+def data():
+    question = Question(title="q1")
+    question.add_choice("a")
+    question.add_choice("b")
+    question.add_choice("c")
+    return question
+
+def test_setagem_choices(data):
+    data.set_correct_choices([2])
+    
+    c = data.choices[1]
+    assert c.is_correct is True
+
+def test_setagem_choices_multiplas(data):
+    data.set_correct_choices([1, 2])
+    
+    assert data.choices[0].is_correct is True
+    assert data.choices[1].is_correct is True
+    assert data.choices[2].is_correct is False
