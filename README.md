@@ -1,5 +1,18 @@
 [![tests](https://github.com/andrehora/test-quiz/actions/workflows/tests.yml/badge.svg)](https://github.com/andrehora/test-quiz/actions/workflows/tests.yml)
 
+# GitHub Actions
+
+### Descrição
+Criar programa com testes no GitHub: Crie um reposiórtio no GitHub. Implemente um pequeno programa (na linguagem de sua escolha) e escreva pelo menos 5 testes de unidade.
+
+Executar os testes no GitHub Actions: Configure a ferramenta de CI/CD GitHub Actions executar os testes automaticamente a cada commit. No GitHub, você encontra exemplos sobre como utilizar o GitHub Actions em linguagens (https://docs.github.com/en/actions/use-cases-and-examples/building-and-testing).
+
+Executar Actions nos sistemas operacionais Ubuntu, MacOS e Windows: Configure o seu workflow do GitHub Actions para dar o build e testar o programa em três sistemas operacionais: Ubuntu, MacOS e Windows.
+
+Executar Actions em pelo menos duas versões da linguagem de programação: Configure o seu workflow do GitHub Actions para dar o build testar o programa em pelo menos duas versões da linguagem escolhida.
+
+(Reutilizei a atividade de Teste de Software)
+
 # Testing Quiz
 
 Neste exercício, iremos melhorar os testes de unidade de sistema de quiz.
